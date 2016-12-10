@@ -42,6 +42,7 @@ int main(int argc, char *argv[])
 	/*监听连接请求--监听队列长度为5*/
 	listen(server_sockfd,5);
 	
+	printf("waiting for connection\n");
 	sin_size=sizeof(struct sockaddr_in);
 	int time=0;	
 	while(1){
